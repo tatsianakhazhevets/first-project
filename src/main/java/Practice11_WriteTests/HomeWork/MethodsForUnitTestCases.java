@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
-import com.fasterxml.jackson.databind.ObjectMapper;
+//import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class MethodsForUnitTestCases {
 
@@ -162,15 +162,15 @@ public class MethodsForUnitTestCases {
         return b == 0 ? a : gcd(b, a % b);
     }
 
-    // 19. Проверка, является ли строка JSON-объектом
-    public boolean isValidJson(String json) {
-        try {
-            new ObjectMapper().readTree(json);
-            return true;
-        } catch (Exception e) {
-            return false;
-        }
-    }
+//    // 19. Проверка, является ли строка JSON-объектом
+//    public boolean isValidJson(String json) {
+//        try {
+//            new ObjectMapper().readTree(json);
+//            return true;
+//        } catch (Exception e) {
+//            return false;
+//        }
+//    }
 
     // 20. Проверка, содержит ли массив дубликаты
     public boolean hasDuplicates(int[] numbers) {
