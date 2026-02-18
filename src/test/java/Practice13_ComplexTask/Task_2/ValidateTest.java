@@ -1,5 +1,8 @@
 package Practice13_ComplexTask.Task_2;
 
+import mentoring.Practice13_ComplexTask.Task_2.InvalidUserException;
+import mentoring.Practice13_ComplexTask.Task_2.User;
+import mentoring.Practice13_ComplexTask.Task_2.UserValidator;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;

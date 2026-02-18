@@ -1,5 +1,7 @@
 package Practice13_ComplexTask.Task_4;
 
+import mentoring.Practice13_ComplexTask.Task_4.Movie;
+import mentoring.Practice13_ComplexTask.Task_4.Rating;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;

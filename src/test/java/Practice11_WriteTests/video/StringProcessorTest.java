@@ -1,6 +1,6 @@
 package Practice11_WriteTests.video;
 
-import Practice11_WriteTests.VideoCodeStringProcessor;
+import mentoring.Practice11_WriteTests.VideoCodeStringProcessor;
 import org.junit.jupiter.api.BeforeEach;
 
 public class StringProcessorTest {

@@ -1,0 +1,13 @@
+package mentoring.Practice14_ProgramPrinciples.homework.Task_8.after;
+
+public class NotificationService {
+    private Sender sender;
+
+    public NotificationService(Sender sender) {
+        this.sender = sender;
+    }
+
+    public void sendNotification(String message) {
+        sender.send(message);
+    }
+}

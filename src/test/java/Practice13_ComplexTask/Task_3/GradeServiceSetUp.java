@@ -1,5 +1,6 @@
 package Practice13_ComplexTask.Task_3;
 
+import mentoring.Practice13_ComplexTask.Task_3.GradeService;
 import org.junit.jupiter.api.BeforeEach;
 
 public class GradeServiceSetUp {

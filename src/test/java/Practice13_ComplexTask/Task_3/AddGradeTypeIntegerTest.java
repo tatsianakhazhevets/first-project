@@ -1,5 +1,7 @@
 package Practice13_ComplexTask.Task_3;
 
+import mentoring.Practice13_ComplexTask.Task_3.InvalidGradeException;
+import mentoring.Practice13_ComplexTask.Task_3.StudentGrade;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

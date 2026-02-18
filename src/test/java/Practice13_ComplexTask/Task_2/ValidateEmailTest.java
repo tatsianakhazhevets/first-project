@@ -1,5 +1,6 @@
 package Practice13_ComplexTask.Task_2;
 
+import mentoring.Practice13_ComplexTask.Task_2.UserValidator;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;

@@ -1,5 +1,8 @@
 package Practice13_ComplexTask.Task_3;
 
+import mentoring.Practice13_ComplexTask.Task_3.GradeService;
+import mentoring.Practice13_ComplexTask.Task_3.InvalidGradeException;
+import mentoring.Practice13_ComplexTask.Task_3.StudentGrade;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;

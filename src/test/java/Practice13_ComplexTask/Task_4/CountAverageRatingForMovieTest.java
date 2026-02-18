@@ -1,5 +1,6 @@
 package Practice13_ComplexTask.Task_4;
 
+import mentoring.Practice13_ComplexTask.Task_4.Movie;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

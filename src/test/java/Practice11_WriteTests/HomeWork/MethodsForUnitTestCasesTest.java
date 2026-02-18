@@ -1,5 +1,6 @@
 package Practice11_WriteTests.HomeWork;
 
+import mentoring.Practice11_WriteTests.HomeWork.MethodsForUnitTestCases;
 import org.junit.jupiter.api.BeforeEach;
 
 public class MethodsForUnitTestCasesTest {
