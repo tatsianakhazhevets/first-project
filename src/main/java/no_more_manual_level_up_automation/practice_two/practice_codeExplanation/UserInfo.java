@@ -1,4 +1,4 @@
-package no_more_manual_level_up_automation.practice_second.practice_codeExplanation;
+package no_more_manual_level_up_automation.practice_two.practice_codeExplanation;
 
 public class UserInfo {
     // class signature
