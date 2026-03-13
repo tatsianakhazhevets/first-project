@@ -27,7 +27,7 @@ public class Main {
                 "\nThe result of the method difference() is " + dif +
                 "\nThe result of the method squareArea() is " + area +
                 "\nThe result of the method squarePerimeter() is " + perimeter +
-                "\nThe result of the method squarePerimeter() is " + second +
+                "\nThe result of the method convertSecondsToMinutes() is " + second +
                 "\nThe result of the method averageSpeed() is " + speed +
                 "\nThe result of the method findHypotenuse() is " + hypotenuse +
                 "\nThe result of the method circleCircumference() is " + circle +
