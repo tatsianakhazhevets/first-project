@@ -17,10 +17,10 @@ public class Circle {
     }
 
     public double calculateArea() {
-        return Math.round(Math.PI * this.radius * this.radius);
+        return Math.PI * this.radius * this.radius;
     }
 
     public double calculateCircumference() {
-        return Math.round(2 * Math.PI * this.radius);
+        return 2 * Math.PI * this.radius;
     }
 }

@@ -23,6 +23,6 @@ public class Point {
     }
 
     public void print() {
-        System.out.println("x: " + this.x + " , y: " + this.y);
+        System.out.println("Coordinates: x = " + this.x + ", y = " + this.y);
     }
 }

@@ -27,6 +27,6 @@ public class Teacher {
     }
 
     public void printInfo() {
-        System.out.println("Teacher: " + this.name + ", subject: " + this.subject);
+        System.out.println("Teacher: " + this.name + ", Subject: " + this.subject);
     }
 }

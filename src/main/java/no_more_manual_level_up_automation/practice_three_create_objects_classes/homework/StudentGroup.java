@@ -27,6 +27,6 @@ public class StudentGroup {
     }
 
     public void printInfo() {
-        System.out.println("Group: " + this.groupName + " , quantity: " + this.studentCount);
+        System.out.println("Student group: " + this.groupName + ", Number of students: " + this.studentCount);
     }
 }

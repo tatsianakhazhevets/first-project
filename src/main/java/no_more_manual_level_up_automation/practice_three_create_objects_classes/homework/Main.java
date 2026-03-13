@@ -8,15 +8,15 @@ public class Main {
 
         Rectangle rectangle = new Rectangle(9, 5);
         rectangle.setWidth(8);
-        System.out.println(rectangle.calculateArea());
+        System.out.println("Rectangle area: "  + rectangle.calculateArea());
 
         Book book = new Book("The compound effect", "Daren Hardy");
         book.setAuthor("Darren Hardy");
         book.printInfo();
 
         BankAccount bankAccount = new BankAccount("Tania", 5000.0);
-        bankAccount.deposit(5000.0);
-        bankAccount.withdraw(1000.0);
+        bankAccount.deposit(6000.0);
+        bankAccount.withdraw(2000.0);
         bankAccount.printBalance();
 
         Point point = new Point(55.862, 63.458);
@@ -29,7 +29,7 @@ public class Main {
 
         Circle circle = new Circle(5.0);
         circle.setRadius(7.0);
-        System.out.println("Circle Area: " + circle.calculateArea() + ", Circle Circumference: " + circle.calculateCircumference());
+        System.out.println("Circle area: " + circle.calculateArea() + ", Circle circumference: " + circle.calculateCircumference());
 
         Teacher teacher = new Teacher("Tania", "Information");
         teacher.setSubject("Testing");

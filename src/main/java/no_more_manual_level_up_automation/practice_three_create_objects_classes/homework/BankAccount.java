@@ -23,14 +23,14 @@ public class BankAccount {
     }
 
     public double deposit(double amount) {
-        return this.balance + amount;
+        return this.balance += amount;
     }
 
     public double withdraw(double amount) {
-        return this.balance - amount;
+        return this.balance -= amount;
     }
 
     public void printBalance() {
-        System.out.println("Balance is " + this.balance);
+        System.out.println("The balance in the bank account is " + this.balance);
     }
 }

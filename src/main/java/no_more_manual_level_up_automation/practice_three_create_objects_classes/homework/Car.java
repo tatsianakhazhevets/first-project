@@ -27,6 +27,6 @@ public class Car {
     }
 
     public void print() {
-        System.out.println("Brand: " + this.brand + ", year: " + this.year);
+        System.out.println("Car brand: " + this.brand + ", Year of car production: " + this.year);
     }
 }
