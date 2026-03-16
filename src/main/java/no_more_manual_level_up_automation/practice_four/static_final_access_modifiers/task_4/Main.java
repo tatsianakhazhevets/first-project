@@ -1,4 +1,4 @@
-package no_more_manual_level_up_automation.practice_three.static_final_access_modifiers.task_4;
+package no_more_manual_level_up_automation.practice_four.static_final_access_modifiers.task_4;
 
 public class Main {
     public static void main(String[] args) {

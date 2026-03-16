@@ -1,4 +1,4 @@
-package no_more_manual_level_up_automation.practice_three.static_final_access_modifiers.task_5;
+package no_more_manual_level_up_automation.practice_four.static_final_access_modifiers.task_5;
 
 
 public class GameSettings {

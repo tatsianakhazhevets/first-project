@@ -1,4 +1,4 @@
-package no_more_manual_level_up_automation.practice_three.static_final_access_modifiers.task_6;
+package no_more_manual_level_up_automation.practice_four.static_final_access_modifiers.task_6;
 
 public class Person {
     private String firstName;
