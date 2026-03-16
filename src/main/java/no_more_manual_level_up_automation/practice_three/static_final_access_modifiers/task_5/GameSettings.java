@@ -15,8 +15,17 @@ public class GameSettings {
         maxPlayers = newMaxPlayers;
     }
 
-    public int addPlayer() {
-        return currentPlayers++;
+    public void addPlayer() {
+
+        if (maxPlayers <= 0) {
+            throw new IllegalStateException("The maximum number of players is not set.");
+        }
+
+        if (this.currentPlayers >= maxPlayers) {
+            throw new IllegalStateException("The maximum number of players has been reached.");
+        }
+
+        this.currentPlayers++;
     }
 
     public void printGameStatus() {

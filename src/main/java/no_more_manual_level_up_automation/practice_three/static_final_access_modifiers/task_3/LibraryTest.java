@@ -5,10 +5,14 @@ public class LibraryTest {
 
         Library library = new Library();
 
-        //library.bookTitle - access only via getter
-        library.getBookTitle();
         String author = library.author;
         int year = library.year;
         String category = library.category;
+
+        System.out.println("The bookTitle field with the private access modifier can only be accessed via a getter: " + library.getBookTitle() +
+                "\nThe author field with the protected access modifier can be accessed directly: " + author +
+                "\nThe year field with the default access modifier can be accessed directly: " + year +
+                "\nThe category field with the public access modifier can be accessed directly: " + category);
+
     }
 }
