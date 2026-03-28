@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 public class ForTasks {
 
+    private static final Scanner scanner = new Scanner(System.in);
+
     public static void printNumbersFromOneTillHundredDividedByThree() {
 
         for (int i = 1; i <= 100; i++) {
@@ -15,7 +17,6 @@ public class ForTasks {
 
 
     public static int sumOfNumbers() {
-        Scanner scanner = new Scanner(System.in);
         System.out.print("Enter your number: ");
         int number = scanner.nextInt();
 
@@ -32,7 +33,6 @@ public class ForTasks {
 
 
     public static void printMultiplicationTable() {
-        Scanner scanner = new Scanner(System.in);
         System.out.print("Enter your number: ");
         int number = scanner.nextInt();
 
@@ -47,7 +47,6 @@ public class ForTasks {
 
 
     public static boolean isPrimeCheck() {
-        Scanner scanner = new Scanner(System.in);
         System.out.print("Enter your number: ");
         int number = scanner.nextInt();
 
@@ -57,7 +56,7 @@ public class ForTasks {
 
         boolean isPrime = true;
 
-        for (int i = 2; i <= number - 1; i++) {
+        for (int i = 2; i * i <= number; i++) {
             if (number % i == 0) {
                 isPrime = false;
                 break;

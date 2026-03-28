@@ -4,26 +4,23 @@ import java.util.Scanner;
 
 public class IfElseTasks {
 
+    private static final Scanner scanner = new Scanner(System.in);
+
     public static String checkNumber() {
-        Scanner scanner = new Scanner(System.in);
         System.out.print("Enter your number: ");
         int number = scanner.nextInt();
 
-        String result = "";
         if (number > 0) {
-            result = "Number is positive";
+            return "Number is positive";
         } else if (number < 0) {
-            result = "Number is negative";
+            return "Number is negative";
         } else {
-            result = "Number is zero";
+            return "Number is zero";
         }
-
-        return result;
     }
 
 
     public static int printMaxNumber() {
-        Scanner scanner = new Scanner(System.in);
         System.out.print("Enter first number: ");
         int firstNumber = scanner.nextInt();
         System.out.print("Enter second number: ");
@@ -41,53 +38,32 @@ public class IfElseTasks {
 
 
     public static String defineGradeOnScale() {
-        Scanner scanner = new Scanner(System.in);
         System.out.print("Enter your grade from 1 till 5: ");
         int number = scanner.nextInt();
 
-        if (number >= 6 || number <= 0) {
-            throw new IllegalArgumentException("The grade must be from 1 till 5");
-        }
-
-        String textDescription = "";
-        switch (number) {
-            case 5:
-                textDescription = "Excellent";
-                break;
-            case 4:
-                textDescription = "Good";
-                break;
-            case 3:
-                textDescription = "Satisfactorily";
-                break;
-            case 2:
-            case 1:
-                textDescription = "Unsatisfactorily";
-                break;
-        }
-
-        return textDescription;
+        return switch (number) {
+            case 5 -> "Excellent";
+            case 4 -> "Good";
+            case 3 -> "Satisfactorily";
+            case 2, 1 -> "Unsatisfactorily";
+            default -> throw new IllegalArgumentException("The grade must be from 1 till 5");
+        };
     }
 
 
     public static String checkParity() {
-        Scanner scanner = new Scanner(System.in);
         System.out.print("Enter your number: ");
         int number = scanner.nextInt();
 
-        String parity = "";
         if (number % 2 == 0) {
-            parity = "Number is even";
+            return "Number is even";
         } else {
-            parity = "Number is odd";
+            return "Number is odd";
         }
-
-        return parity;
     }
 
 
     public static String defineDiscountValue() {
-        Scanner scanner = new Scanner(System.in);
         System.out.print("Enter your age: ");
         int age = scanner.nextInt();
 
@@ -95,21 +71,17 @@ public class IfElseTasks {
             throw new IllegalArgumentException("The age is not valid");
         }
 
-        String discount = "";
         if (age < 18) {
-            discount = "25%";
+            return "25%";
         } else if (age >= 65) {
-            discount = "30%";
+            return "30%";
         } else {
-            discount = "No discount";
+            return "No discount";
         }
-
-        return discount;
     }
 
 
     public static String evaluateGradeOnPoints() {
-        Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the grade from 0 till 100: ");
         int point = scanner.nextInt();
 
@@ -117,17 +89,14 @@ public class IfElseTasks {
             throw new IllegalArgumentException("The grade must be from 0 till 100");
         }
 
-        String pointDescription = "";
         if (point >= 90) {
-            pointDescription = "Excellent";
+            return "Excellent";
         } else if (point >= 75 && point <= 89) {
-            pointDescription = "Good";
+            return "Good";
         } else if (point >= 60 && point <= 74) {
-            pointDescription = "Satisfactorily";
+            return "Satisfactorily";
         } else {
-            pointDescription = "Unsatisfactorily";
+            return "Unsatisfactorily";
         }
-
-        return pointDescription;
     }
 }

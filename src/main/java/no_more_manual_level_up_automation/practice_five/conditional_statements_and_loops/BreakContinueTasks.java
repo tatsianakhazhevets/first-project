@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 public class BreakContinueTasks {
 
-    public static void countSumUntilNegativeNumber() {
-        Scanner scanner = new Scanner(System.in);
+    private static final Scanner scanner = new Scanner(System.in);
 
+    public static void countSumUntilNegativeNumber() {
         int sum = 0;
         while (true) {
             System.out.print("Enter the number: ");
@@ -32,31 +32,35 @@ public class BreakContinueTasks {
 
 
     public static void printPositiveNumbers() {
-        Scanner scanner = new Scanner(System.in);
         int number;
 
         do {
             System.out.print("Enter the number: ");
             number = scanner.nextInt();
-            if (number < 0) {
-                System.out.println("The number is negative");
-                continue;
+            scanner.nextLine();
+
+            if (number == 0) {
+                System.out.println("Printed value is " + number + "\nProgram ended!");
+                break;
+            } else if (number < 0) {
+                System.out.println(number + " is negative");
+            } else {
+                System.out.println(number + " is positive");
             }
-            System.out.println("Printed value is " + number);
+
         } while (true);
     }
 
 
     public static void enterStringsUntilCommandStop() {
-        Scanner scanner = new Scanner(System.in);
-
         String command;
         String correctCommand = "stop";
         while (true) {
             System.out.print("Enter the command: ");
             command = scanner.nextLine();
+            System.out.println("The entered command is " + command);
             if (command.equals(correctCommand)) {
-                System.out.println("The process is stopped");
+                System.out.println("The process is stopped!");
                 break;
             }
         }

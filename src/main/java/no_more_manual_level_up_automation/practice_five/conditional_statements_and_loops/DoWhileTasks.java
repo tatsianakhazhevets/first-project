@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 public class DoWhileTasks {
 
-    public static void requestPositiveNumber() {
-        Scanner scanner = new Scanner(System.in);
+    private static final Scanner scanner = new Scanner(System.in);
 
+    public static void requestPositiveNumber() {
         int number;
         do {
             System.out.print("Enter your number: ");
@@ -18,8 +18,6 @@ public class DoWhileTasks {
 
 
     public static void checkPassword() {
-        Scanner scanner = new Scanner(System.in);
-
         String password;
         String correctPassword = "ok";
         do {
@@ -41,13 +39,12 @@ public class DoWhileTasks {
 
 
     public static void checkCommand() {
-        Scanner scanner = new Scanner(System.in);
-
         String command;
         String correctCommand = "exit";
         do {
             System.out.print("Enter the command: ");
             command = scanner.nextLine();
+            System.out.println("The entered command is " + command);
         } while (!command.equals(correctCommand));
 
         System.out.println("The program has finished");
@@ -55,7 +52,6 @@ public class DoWhileTasks {
 
 
     public static void countDigitsQuantity() {
-        Scanner scanner = new Scanner(System.in);
         System.out.print("Enter your number: ");
         int number = scanner.nextInt();
 

@@ -4,8 +4,9 @@ import java.util.Scanner;
 
 public class WhileTasks {
 
+    private static final Scanner scanner = new Scanner(System.in);
+
     public static long countFactorial() {
-        Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the number from 0 till 20: ");
         int number = scanner.nextInt();
 
@@ -29,7 +30,6 @@ public class WhileTasks {
 
 
     public static void printEvenNumbers() {
-        Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the number: ");
         int number = scanner.nextInt();
 
@@ -48,7 +48,6 @@ public class WhileTasks {
 
 
     public static void printReversedOrderOfNumbers() {
-        Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the number: ");
         int number = scanner.nextInt();
 
