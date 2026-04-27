@@ -1,22 +1,12 @@
 package no_more_manual_level_up_automation.practice_six.oop_principles.farm;
 
-import java.util.HashSet;
-import java.util.Set;
+import no_more_manual_level_up_automation.practice_six.oop_principles.SystemManager;
 
-public class Farm {
+public class Farm extends SystemManager<Animal> {
 
-    private Set<Animal> animals;
-
-    public Farm() {
-        this.animals = new HashSet<>();
-    }
-
-    public void addAnimal(Animal animal) {
-        animals.add(animal);
-    }
-
-    public void manageAnimal() {
-        for (Animal animal : animals) {
+    @Override
+    public void act() {
+        for (Animal animal : items) {
             animal.care();
             animal.produce();
         }

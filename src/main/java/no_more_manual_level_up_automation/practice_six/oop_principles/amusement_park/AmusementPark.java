@@ -1,22 +1,12 @@
 package no_more_manual_level_up_automation.practice_six.oop_principles.amusement_park;
 
-import java.util.HashSet;
-import java.util.Set;
+import no_more_manual_level_up_automation.practice_six.oop_principles.SystemManager;
 
-public class AmusementPark {
+public class AmusementPark extends SystemManager<Attraction> {
 
-    private Set<Attraction> attractions;
-
-    public AmusementPark() {
-        this.attractions = new HashSet<>();
-    }
-
-    public void addAttraction(Attraction attraction) {
-        attractions.add(attraction);
-    }
-
-    public void manageAttractions() {
-        for (Attraction attraction : attractions) {
+    @Override
+    public void act() {
+        for (Attraction attraction : items) {
             attraction.manage();
         }
     }

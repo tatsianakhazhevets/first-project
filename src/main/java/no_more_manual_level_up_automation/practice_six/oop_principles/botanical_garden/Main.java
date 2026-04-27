@@ -5,8 +5,8 @@ public class Main {
         BotanicalGarden botanicalGarden = new BotanicalGarden();
         Plant orchid = new Orchid("Lovely Orchid");
         Plant cactus = new Cactus("Just Cactus");
-        botanicalGarden.addPlant(orchid);
-        botanicalGarden.addPlant(cactus);
-        botanicalGarden.managePlants();
+        botanicalGarden.add(orchid);
+        botanicalGarden.add(cactus);
+        botanicalGarden.act();
     }
 }

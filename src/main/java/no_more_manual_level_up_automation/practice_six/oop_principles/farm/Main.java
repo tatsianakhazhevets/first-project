@@ -5,8 +5,8 @@ public class Main {
         Farm farm = new Farm();
         Animal cow = new Cow("Covy Cow");
         Animal chicken = new Chicken("Chiky Chicken");
-        farm.addAnimal(cow);
-        farm.addAnimal(chicken);
-        farm.manageAnimal();
+        farm.add(cow);
+        farm.add(chicken);
+        farm.act();
     }
 }

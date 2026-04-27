@@ -1,22 +1,11 @@
 package no_more_manual_level_up_automation.practice_six.oop_principles.zoo;
 
-import java.util.HashSet;
-import java.util.Set;
+import no_more_manual_level_up_automation.practice_six.oop_principles.SystemManager;
 
-public class Zoo {
-
-    private Set<Animal> animals;
-
-    public Zoo() {
-        this.animals = new HashSet<>();
-    }
-
-    public void addAnimal(Animal animal) {
-        animals.add(animal);
-    }
-
-    public void showBehavior() {
-        for (Animal animal : animals) {
+public class Zoo extends SystemManager<Animal> {
+    @Override
+    public void act() {
+        for (Animal animal : items) {
             animal.makeSound();
             animal.moveAround();
         }

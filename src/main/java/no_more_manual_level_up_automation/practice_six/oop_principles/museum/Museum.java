@@ -1,22 +1,12 @@
 package no_more_manual_level_up_automation.practice_six.oop_principles.museum;
 
-import java.util.HashSet;
-import java.util.Set;
+import no_more_manual_level_up_automation.practice_six.oop_principles.SystemManager;
 
-public class Museum {
+public class Museum extends SystemManager<Exhibit> {
 
-    private Set<Exhibit> exhibits;
-
-    public Museum() {
-        this.exhibits = new HashSet<>();
-    }
-
-    public void addExhibit(Exhibit exhibit) {
-        exhibits.add(exhibit);
-    }
-
-    public void manageExhibits() {
-        for (Exhibit exhibit : exhibits) {
+    @Override
+    public void act() {
+        for (Exhibit exhibit : items) {
             exhibit.care();
         }
     }

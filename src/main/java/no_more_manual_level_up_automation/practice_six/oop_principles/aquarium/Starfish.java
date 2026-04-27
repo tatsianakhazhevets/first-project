@@ -1,6 +1,6 @@
 package no_more_manual_level_up_automation.practice_six.oop_principles.aquarium;
 
-public class Starfish extends SeaCreature {
+public class Starfish implements SeaCreature {
     @Override
     public void move() {
         System.out.println("Starfish crawls slowly along the bottom");

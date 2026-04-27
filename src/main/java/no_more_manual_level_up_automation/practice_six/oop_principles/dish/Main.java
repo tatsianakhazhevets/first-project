@@ -5,8 +5,8 @@ public class Main {
         Menu menu = new Menu();
         Dish hotDish = new HotDish("Borsch", 45);
         Dish drink = new Drink("Kompot", 250);
-        menu.addDish(hotDish);
-        menu.addDish(drink);
-        menu.printDescription();
+        menu.add(hotDish);
+        menu.add(drink);
+        menu.act();
     }
 }

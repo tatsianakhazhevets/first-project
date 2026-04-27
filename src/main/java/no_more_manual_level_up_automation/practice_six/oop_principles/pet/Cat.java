@@ -1,6 +1,6 @@
 package no_more_manual_level_up_automation.practice_six.oop_principles.pet;
 
-public class Cat extends Pet {
+public class Cat implements Pet {
     @Override
     public void feed() {
         System.out.println("Cat eats wet food");

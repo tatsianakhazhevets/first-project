@@ -5,8 +5,8 @@ public class Main {
         Zoo zoo = new Zoo();
         Animal elephant = new Elephant("Big Elephant");
         Animal bird = new Bird("Little Bird");
-        zoo.addAnimal(elephant);
-        zoo.addAnimal(bird);
-        zoo.showBehavior();
+        zoo.add(elephant);
+        zoo.add(bird);
+        zoo.act();
     }
 }

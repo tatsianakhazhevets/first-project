@@ -5,8 +5,8 @@ public class Main {
         Museum museum = new Museum();
         Exhibit manuscript = new Manuscript("Manuscript");
         Exhibit sculpture = new Sculpture("Sculpture");
-        museum.addExhibit(manuscript);
-        museum.addExhibit(sculpture);
-        museum.manageExhibits();
+        museum.add(manuscript);
+        museum.add(sculpture);
+        museum.act();
     }
 }

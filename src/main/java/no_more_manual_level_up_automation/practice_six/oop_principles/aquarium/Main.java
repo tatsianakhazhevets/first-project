@@ -5,8 +5,8 @@ public class Main {
         Aquarium aquarium = new Aquarium();
         SeaCreature shark = new Shark();
         SeaCreature starfish = new Starfish();
-        aquarium.addSeaCreature(shark);
-        aquarium.addSeaCreature(starfish);
-        aquarium.demonstrateBehaviour();
+        aquarium.add(shark);
+        aquarium.add(starfish);
+        aquarium.act();
     }
 }

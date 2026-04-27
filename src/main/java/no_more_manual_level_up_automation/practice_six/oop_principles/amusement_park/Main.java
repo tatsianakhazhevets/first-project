@@ -5,8 +5,8 @@ public class Main {
         AmusementPark amusementPark = new AmusementPark();
         Attraction rides = new Rides("Rides 8");
         Attraction roller = new Roller("Kid's Roller");
-        amusementPark.addAttraction(rides);
-        amusementPark.addAttraction(roller);
-        amusementPark.manageAttractions();
+        amusementPark.add(rides);
+        amusementPark.add(roller);
+        amusementPark.act();
     }
 }

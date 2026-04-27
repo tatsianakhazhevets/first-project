@@ -5,8 +5,8 @@ public class Main {
         Zootechnician zootechnician = new Zootechnician();
         Pet dog = new Dog();
         Pet cat = new Cat();
-        zootechnician.addPet(dog);
-        zootechnician.addPet(cat);
-        zootechnician.interactWithPets();
+        zootechnician.add(dog);
+        zootechnician.add(cat);
+        zootechnician.act();
     }
 }
